@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<!--UOL Web Dev Team 79 Project, Midterm-->
+
+<!-- Known List of Things to Address: 
+
+Things to know:
+"fa" refers to FontAwesome, which is linked to the appropriate FontAwesome style sheet 
+
+ End of List of Things -->
+
+<!-- Opening of HTML section-->
+
+<html>
+
+<!-- Opening of HEAD section-->
+
+<head>
+    <title>Team 79 Project</title>
+
+    <!-- Opening of meta section-->
+    <meta charset="utf-8">
+    <!-- Closing of meta section-->
+
+    <!-- Font style based on googleapis.com -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Joan:300,400,500,700">
+
+
+    <!-- Font awesome style sheet -->
+    <!-- This stylesheet is used for icons in the footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- link to main.css -->
+    <link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css">
+
+</head>
+<!-- Closing of HEAD section-->
+
+<!-- Opening of body section-->
+
+<body>
+
+    <!-- Opening of Content Page content -->
+    <div class="page-container">
+
+        <!-- Header Section -->
+        <header class="header header-fixed">
+
+            <!-- Div containing logo in the header and title -->
+            <figure class="headerlogo">
+                <mark id="header__title">Superb</mark><a href="index.html"><img src="assets/img/exotic.jpeg" /></a><mark
+                    id="header__title">Park</mark>
+            </figure>
+            <!-- Closing of / Div containing logo in the header and title -->
+
+            <div class="header__inner">
+                <div class="header__menu">
+
+                    <!-- absolute-nav -->
+                    <nav class="absolute-nav">
+
+                        <!-- absolute-menu -->
+                        <ul class="absolute-menu">
+                            <li class="current-menu-item"><a href="index.html">Main</a>
+                            </li>
+                            <li><a href="tickets_2.html">Tickets</a>
+                            </li>
+                            <li><a href="about.html">About</a>
+                            </li>
+                        </ul>
+                        <!-- absolute-menu -->
+
+                    </nav>
+                    <!-- Closing of / absolute-nav -->
+
+                </div>
+                <div>
+                    <div class="header__phone"><span>Thank you, call us</span><br /><span id="phone"> 3.
+                            1415926</span>
+                    </div>
+                    <a class="main-button main-button--primary" id="ellipsed" href="#">Booking now
+                    </a>
+                </div>
+            </div>
+
+        </header>
+        <!-- Closing of / Header Section -->
+
+        <!-- divulgate-now (Social side buttons)-->
+        <!-- References to the external page are not added to keep things internal-->
+        <nav class="divulgate-now">
+
+            <!-- Beginning of Social side buttons wrapper -->
+            <!--to set the background color around the links only-->
+            <nav class="divulgate-now-wrapper">
+
+                <!-- iconize_now Facebook-->
+                <a class="link" href="#"> <span class="hovertext" message-hover="facebook">F</span>
+                </a><!-- Closing of / iconize_now Facebook-->
+
+                <!-- iconize_now Instagram -->
+                <a class="link" href="#"><span class="hovertext" message-hover="instagram">I</span>
+                </a><!-- Closing of / iconize_now Instagram-->
+
+                <!-- iconize_now Twitter -->
+                <a class="link" href="#"><span class="hovertext" message-hover="twitter">T</span>
+                </a><!-- Closing of / iconize_now Twitter-->
+
+            </nav>
+            <!-- Closing of / Social side buttons wrapper -->
+
+        </nav>
+        <!-- Closing of / divulgate-now -->
+
+        <!-- Mainfigure, below the header-->
+        <section class="mainfigure">
+
+            <!-- Opening of Figure Element -->
+            <figure class="mainfigure-item" style="background-image: url('assets/img/intro/1.jpg');"><img
+                    src="assets/img/intro/1.jpg" alt="" />
+
+                <!-- Opening of Figure related Information and Text Element -->
+                <figcaption class="mainfigure-boxinfo">
+                    <h1 class="mainfigure-title">S T P</h1>
+                    <p class="mainfigure-info">Coolness Greatness Superbness
+                    </p>
+                </figcaption>
+                <!-- Closing / of Figure related Information and Text Element -->
+
+            </figure>
+            <!-- Closing of Figure Element -->
+
+        </section>
+        <!-- Closing of / Mainfigure -->
+
+        <!-- Section id="divider", Orange stripe used as divider-->
+        <section id="divider">
+        </section>
+        <!-- Closing of / Section  id="divider"-->
+
+        <!-- Main Welcome Section and Text-->
+        <mark class="title">
+            <h1 class="main-title" id="below__mainfigure">Welcome to <br /><br /><span class='main-color'
+                    id="eyecatch">Supernova
+                </span> <br /><br />of fun<br /><br />
+                Reinventing the meaning of fun for the whole<br /> <span class='main-color'>Universe
+                </span>
+                since the Big Bang</h1>
+            <p class="title-text"> “The Answer to the Great Question... Of Life, the Universe
+                and
+                Everything... Is... Forty-two,' said Deep Thought, with infinite majesty and
+                calm.”
+                ― Douglas Adams, The Hitchhiker's Guide to the Galaxy </p>
+        </mark>
+        <!-- Closing of / Main Welcome Section and Text -->
+
+        <!-- Section id="divider"-->
+        <section id="divider">
+        </section>
+        <!-- Closing of / Section  id="divider"-->
+
+        <!-- Rides & Links-->
+        <article class="pilot-section" id="articles">
+
+            <!-- Beginning of the Ride grid, below mainfigure, Flexed in a row -->
+            <!-- to change the main titles CSS of the grid-items execute changes in #eyecatch -->
+            <div class="grid-row">
+
+                <!-- First grid box -->
+                <figure class="grid-item">
+                    <img src="assets/img/carousel_2/3.jpg" />
+                    <p><span id="eyecatch">Incredible</span><br /><br /> Starlight Rides</p>
+                </figure>
+                <!-- Closing of / First grid box -->
+
+                <!-- Second grid box -->
+                <figure class="grid-item" id="middle__box">
+                    <img src="assets/img/carousel_2/3.jpg" />
+                    <p><span id="eyecatch">Adventure</span> <br /><br />Lightyears Rides</p>
+                </figure>
+                <!-- Closing of / Second grid box -->
+
+                <!-- Last grid Double boxes -->
+                <div class="grid-item">
+
+                    <!-- Beginning of the Column to the right, Flexed in a column. -->
+                    <div class="grid-column">
+
+                        <!-- First columned box of the Double boxes -->
+                        <figure class="subitem">
+                            <figcaption class="grid-bg" style="background-image: url('assets/img/carousel_2/3.jpg');">
+                                <p><span id="eyecatch">Jungliness</span><br /><br />
+                                <p id="green">Universal Rides
+                                <p></p>
+                            </figcaption>
+                        </figure>
+                        <!-- Closing of / First columned box of the Double boxes -->
+
+                        <br /> <br />
+
+                        <!-- Second columned box of the Double boxes -->
+                        <figure class="subitem">
+                            <figcaption class="grid-bg" style="background-image: url('assets/img/carousel_2/3.jpg');">
+                                <p><span id="eyecatch">Giraffe</span><br /><br />
+                                <p id="green">Space Rides
+                                <p></p>
+                            </figcaption>
+                        </figure>
+                        <!-- Closing of / Second columned box of the Double boxes -->
+
+
+                    </div>
+                    <!-- Closing of / Column to the right, Flexed in a column. -->
+
+                </div>
+                <!-- Closing of / Last grid Double boxes -->
+
+        </article>
+        <!-- Closing of / Rides & Links -->
+
+        <!-- Section single Image 100% width -->
+        <figure class="pilot-section  bg-fixed" style="background-image:url(assets/img/bg/spaceship.jpg);">
+
+            <!-- Section Text -->
+            <mark class="title__style-02">
+                <h2 class="main-title" id="white">Alien
+                    <span id="eyecatch">encounter</span> Promo
+                </h2>
+            </mark>
+            <p><br /><br /><br />
+            <figcaption class="title__style-02">
+                <h2 class="main-title" id="white">Be the first one to encounter <span id="eyecatch">Aliens</span>
+                    and shoot... with them
+                </h2>
+            </figcaption>
+            </p>
+            <!-- Closing of / Section Text -->
+
+        </figure>
+        <!-- Closing of / single Image 100% width -->
+
+
+        <!-- Section -->
+        <section class="pilot-section">
+
+            <!-- Text prior slider -->
+            <mark class="title">
+                <h1 class="main-title">Welcome to the interstellar infopoint</h1>
+                <mark>
+                    <h1 class="main-color"><i>Fast</i>, catch the slide!</h1>
+                </mark>
+            </mark><!-- Closing of / Text prior slider -->
+
+        </section>
+        <!-- Closing of / Section -->
+
+
+        <!-- Opening of Slider Section-->
+        <section class="slider-container">
+            <div class="slider-movement">
+                <div class="slideit">
+
+                    <!-- Slider one box-image -->
+                    <div class="box-images">
+
+                        <!-- Slider one Image -->
+                        <figure class="box-images__box"><a class="box-images__bg" href="#"
+                                style="background-image: url('assets/img/carousel_2/5.jpg');"><img
+                                    src="assets/img/carousel_2/5.jpg" alt="" /></a>
+
+                            <!-- Slider one box-image Text on top of the image-->
+                            <figcaption class="box-images__info">
+                                <p class="box-images__description">Info 2</p>
+                            </figcaption>
+                            <!-- Closing of / Slider one box-image Text on top of the image-->
+
+                        </figure>
+                        <!-- Closing of / Slider one box-image -->
+
+                        <!-- Slider one Text Section on right side of the image -->
+                        <article class="box-images__info_right">
+                            <h3 class="box-images__exchange"><a href="#">Information 2</a>
+                            </h3>
+                            <p class="box-images__text">Web Uol Text requested</p><a href="#">Discover
+                                more</a>
+                        </article>
+                        <!-- Closing of / Slider one Text Section on right side of the image -->
+
+                    </div><!-- Closing of / Slider one box-image -->
+
+                </div>
+                <div class="slideit">
+
+                    <!-- Slider two box-image -->
+                    <div class="box-images">
+
+                        <!-- Slider two Image -->
+                        <figure class="box-images__box"><a class="box-images__bg" href="#"
+                                style="background-image: url('assets/img/carousel_2/4.jpg');"><img
+                                    src="assets/img/carousel_2/4.jpg" alt="" /></a>
+
+                            <!-- Slider two box-image Text on top of the image-->
+                            <figcaption class="box-images__info">
+                                <p class="box-images__description">Info 1</p>
+                            </figcaption>
+                            <!-- Closing of / Slider two box-image Text on top of the image-->
+
+                        </figure>
+                        <!-- Closing of / Slider two box-image -->
+
+                        <!-- Slider two Text Section on right side of the image -->
+                        <article class="box-images__info_right">
+                            <h3 class="box-images__exchange"><a href="#">Information 1</a>
+                            </h3>
+                            <p class="box-images__text">Web Uol Text requested</p><a href="#">Discover
+                                more</a>
+                        </article>
+                        <!-- Closing of / Slider two Text Section on right side of the image -->
+
+                    </div><!-- Closing of / Slider two box-image -->
+
+                </div>
+                <div class="slideit">
+
+                    <!-- Slider three box-image -->
+                    <div class="box-images">
+
+                        <!-- Slider three Image-->
+                        <figure class="box-images__box"><a class="box-images__bg" href="#"
+                                style="background-image: url('assets/img/carousel_2/3.jpg');"><img
+                                    src="assets/img/carousel_2/1.jpg" alt="" /></a>
+
+                            <!-- Slider three box-image Text on top of the image-->
+                            <figcaption class="box-images__info">
+                                <p class="box-images__description">Info 1</p>
+                            </figcaption>
+                            <!-- Closing of / Slider three box-image Text on top of the image-->
+
+                        </figure>
+                        <!-- Closing of / Slider three Image-->
+
+                        <!-- Slider three Text Section on right side of the image -->
+                        <article class="box-images__info_right">
+                            <h3 class="box-images__exchange"><a href="#">Information 1</a>
+                            </h3>
+                            <p class="box-images__text">Web Uol Text requested</p><a href="#">Discover
+                                more</a>
+                        </article>
+                        <!-- Closing of / Slider three Text Section on right side of the image -->
+
+                    </div><!-- Closing of / Slider three box-image -->
+
+                </div>
+            </div>
+        </section>
+        <!-- Opening of Slider Section-->
+
+
+        <!-- Opening of Footer Section -->
+        <footer class="footer-section">
+
+            <!-- Opening of Left Footer Section -->
+            <aside class="footer-left">
+                <h3>Exotic Space <span>Park</span></h3>
+
+                <!-- Opening of Left Footer Navigation -->
+                <nav class="footer-links">
+                    <p>
+                        <!-- class="link-first" is disabled at the moment in the CSS, in case "|" has to be 
+                    removed before the first link, enabled it in the CSS -->
+                        <a href="index.html" class="link-first">main</a>
+                        <a href="tickets_2.html">Tickets</a>
+                        <a href="#" class="link-last">About</a>
+                    </p>
+                </nav>
+                <!-- Closing of / Left Footer Navigation -->
+
+            </aside>
+            <!-- Closing of / Left Footer Section -->
+
+            <!-- Opening of Center Footer Section, with address details -->
+            <summary class="footer-center">
+
+                <!-- Opening of footer address -->
+                <summary class="footer-icons">
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>To the first star</span>Then turn left and continue going</p>
+                </summary>
+                <!-- Closing of / footer address -->
+
+            </summary>
+            <!-- Closing of / Center Footer Section, with address details -->
+
+            <!-- Opening of Right Footer Section, with contacts details -->
+            <aside class="footer-right">
+
+                <!-- Opening of Right Footer Contact details -->
+                <summary class="footer-icons">
+                    <p>+3.1415926 <i class="fa fa-phone"></i>
+                        <a href="mailto:">space@exjpark.com <i class="fa fa-envelope"></i></a>
+                    </p>
+                </summary>
+                <!-- Closing of / Right Footer Contact details -->
+
+            </aside>
+            <!-- Closing of / Right Footer Section, with contacts details -->
+
+        </footer>
+        <!-- Closing of / Footer Section-->
+
+        <!-- Opening of backtotop element -->
+        <div id="return__top">
+            <span class=""><a href="#"><i class="fa fa-fire"></a></i>
+                <a href="#"> Teleport to the top </a></span>
+        </div>
+        <!-- Closing of / backtotop -->
+
+    </div>
+    <!-- Closing of / Page Content-->
+
+
+</body>
+<!-- Closing of / body section-->
+
+
+</html>
+<!-- Closing of / html section-->

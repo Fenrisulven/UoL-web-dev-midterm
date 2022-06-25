@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superb Cosmic Park - Tickets</title>
+
+    <!-- Font style based on googleapis.com -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Joan:300,400,500,700">
+
+    <!--External CSS file-->
+    <link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css">
+    <!--External JS script file-->
+    <script src="assets/js/tickets_2.js"></script>
+</head>
+
+<body>
+    <!-- Opening of Content Page content -->
+    <div class="page-container">
+
+        <!-- Header Section -->
+        <header class="header header-fixed">
+
+            <!-- Div containing logo in the header and title -->
+            <figure class="headerlogo">
+                <mark id="header__title">Superb</mark><a href="index.html"><img src="assets/img/exotic.jpeg" /></a><mark
+                    id="header__title">Park</mark>
+            </figure>
+            <!-- Closing of / Div containing logo in the header and title -->
+
+            <div class="header__inner">
+                <div class="header__menu">
+
+                    <!-- absolute-nav -->
+                    <nav class="absolute-nav">
+
+                        <!-- absolute-menu -->
+                        <ul class="absolute-menu">
+                            <li><a href="index.html">Main</a>
+                            </li>
+                            <li class="current-menu-item"><a href="tickets_2.html">Tickets</a>
+                            </li>
+                            <li><a href="about_us_3.html">About</a>
+                            </li>
+                        </ul>
+                        <!-- absolute-menu -->
+
+                    </nav>
+                    <!-- Closing of / absolute-nav -->
+
+                </div>
+                <div>
+                    <div class="header__phone"><span>Thank you, call us</span><br /><span id="phone"> 3.
+                            1415926</span>
+                    </div>
+                    <a class="main-button main-button--primary" id="ellipsed" href="#">Booking now
+                    </a>
+                </div>
+            </div>
+
+        </header>
+
+        <nav class="divulgate-now">
+
+            <!-- Beginning of Social side buttons wrapper -->
+            <!--to set the background color around the links only-->
+            <nav class="divulgate-now-wrapper">
+
+                <!-- iconize_now Facebook-->
+                <a class="link" href="#"> <span class="hovertext" message-hover="facebook">F</span>
+                </a><!-- Closing of / iconize_now Facebook-->
+
+                <!-- iconize_now Instagram -->
+                <a class="link" href="#"><span class="hovertext" message-hover="instagram">I</span>
+                </a><!-- Closing of / iconize_now Instagram-->
+
+                <!-- iconize_now Twitter -->
+                <a class="link" href="#"><span class="hovertext" message-hover="twitter">T</span>
+                </a><!-- Closing of / iconize_now Twitter-->
+
+            </nav>
+            <!-- Closing of / Social side buttons wrapper -->
+
+        </nav>
+        <!-- Closing of / divulgate-now -->
+
+        <!--Section 0: intro image-->
+        <section class="mainfigure">
+            <!--Big image with caption in the beginning of the page-->
+            <figure class="mainfigure-item" id="tickets_intro">
+                <figcaption class="mainfigure-boxinfo" id="tickets_intro_caption">
+                    <h1 id="tickets_intro_header">Live a unique experience in Superb Cosmic Park by enjoying our rides,
+                        shows, themed restaurants, and much more.</h1>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section id="divider"></section>
+
+        <!--Section 1: tickets general info-->
+        <figure id="tickets_info">
+            <!--White section for a small amount of inviting introductive text-->
+            <figcaption class="mainfigure-boxinfo" id="tickets_info_caption">
+                <h1 id="tickets_info_header2">
+                    Buy your <br />
+                    <span class='main-color' id="eyecatch">Superb Cosmic tickets</span>
+                    <br />here!
+                </h1>
+                <div id="tickets_info_content">
+                    <p id="tickets_info_pharagraph"> If you’re still not familiar with Superb Cosmic Park this is your
+                        chance
+                        to get to know every corner of
+                        the
+                        parks with these combined tickets. And if you do already know us, we have lots of new
+                        additions
+                        and
+                        fun
+                        just
+                        for you too!
+
+                        Superb Cosmic Park, the theme park with the most variety and fun, invites you to enjoy an
+                        incredible adventure. Purchase your Superb Cosmic Park tickets at the best price. Find the
+                        ticket
+                        price
+                        that’s best for you. Become a real explorer as you travel through all the worlds that Exotic
+                        Park
+                        has
+                        to offer.
+                    </p>
+                </div>
+            </figcaption>
+        </figure>
+
+        <section id="divider"></section>
+
+        <!--Section 2: tickets shop-->
+        <section class="page_section" id="tickets_shop">
+            <figure id="tickets_shop_content">
+                <h1 id="tickets_shop_header">Choose and buy your ticket</h1>
+                <!--List of tabs - tickets types-->
+                <div id="tickets_shop_buttons">
+                    <button class="ticket_tab_button active" onclick="switchTicket(event, 'ticket_tab_1')">2 hours
+                        ticket</button>
+                    <button class="ticket_tab_button" onclick="switchTicket(event, 'ticket_tab_2')">5 hours
+                        ticket</button>
+                    <button class="ticket_tab_button" onclick="switchTicket(event, 'ticket_tab_3')">1 day
+                        ticket</button>
+                    <button class="ticket_tab_button" onclick="switchTicket(event, 'ticket_tab_4')">2 days
+                        ticket</button>
+                    <button class="ticket_tab_button" onclick="switchTicket(event, 'ticket_tab_5')">Night
+                        ticket</button>
+                </div>
+
+                <!--Sub-sections with descriptive info about the ticket types and their pricing-->
+                <!--All but one sections are hidden and open via JS code (by changing their CSS attributes)-->
+                <div class="ticket_tab_content active" id="ticket_tab_1">
+                    <h4 class="ticket_tab_header" id="ticket_tab_h_1">Choose the best 2 hours of your life!</h4>
+                    <p class="ticket_tab_paragraph" id="ticket_tab_p_1">With this ticket you could visit our park in any
+                        2-hour
+                        period during the day programm *LINK TO THE OPENNING HOURS*</p>
+                    <button class="ticket_tab_buy_button" id="ticket_buy_1">&#x20AC 8 BUY</button>
+                </div>
+
+                <div class="ticket_tab_content" id="ticket_tab_2">
+                    <h4 class="ticket_tab_header" id="ticket_tab_h_2">Find your half day space advanture and celebrate
+                        it!
+                    </h4>
+                    <p class="ticket_tab_paragraph" id="ticket_tab_p_2">With this ticket you could visit our park in any
+                        5-hour
+                        period during the day programm *LINK TO THE OPENNING HOURS*</p>
+                    <button class="ticket_tab_buy_button" id="ticket_buy_2">&#x20AC 15 BUY</button>
+                </div>
+
+                <div class="ticket_tab_content" id="ticket_tab_3">
+                    <h4 class="ticket_tab_header" id="ticket_tab_h_3">For those who want better and smoother - try
+                        everything in
+                        our park!</h4>
+                    <p class="ticket_tab_paragraph" id="ticket_tab_p_3">With this ticket you could visit our park for
+                        the
+                        whole
+                        day programm *LINK TO THE OPENNING HOURS*</p>
+                    <button class="ticket_tab_buy_button" id="ticket_buy_3">&#x20AC 22 BUY</button>
+                </div>
+
+                <div class="ticket_tab_content" id="ticket_tab_4">
+                    <h4 class="ticket_tab_header" id="ticket_tab_h_4">Don't hurry to enjoy your life - make your jorney
+                        be
+                        endless!</h4>
+                    <p class="ticket_tab_paragraph" id="ticket_tab_p_4">With this ticket you could visit our park for
+                        the
+                        whole
+                        day programm in any two dates *LINK TO THE OPENNING HOURS*
+                        <br>
+                        <b>*Notice, that the visits must not be realized with interval more than a month.</b>
+                    </p>
+                    <button class="ticket_tab_buy_button" id="ticket_buy_4">&#x20AC 30 BUY</button>
+                </div>
+
+                <div class="ticket_tab_content" id="ticket_tab_5">
+                    <h4 class="ticket_tab_header" id="ticket_tab_h_5">What will find you in the darkness of space? You
+                        want
+                        to
+                        know
+                        it!</h4>
+                    <p class="ticket_tab_paragraph" id="ticket_tab_p_5">With this ticket you could visit our park for a
+                        special
+                        night program *LINK TO THE OPENNING HOURS*
+                        <br>
+                        No children under 16 are allowed.
+                    </p>
+                    <button class="ticket_tab_buy_button" id="ticket_buy_5">&#x20AC 14 BUY</button>
+                </div>
+            </figure>
+        </section>
+
+        <section id="divider"></section>
+
+        <!--Section 3: special offers-->
+        <div class="page_section" id="tickets_specials">
+            <h1 id="tickets_specials_header">Special programms</h1>
+
+            <!--Grid of selling images of each special offer and their short description-->
+            <!--Buttons open the modal window (JS code) with opportunity to book the activity-->
+            <div id="specials_divs">
+                <div class="specials_div" id="specials_div_1">
+                    <img src="assets/img/tickets_2/specials1.jpg" alt="The first special offer" class="specials_img">
+                    <h4 class="specials_div_title" id="specials_div_title_1">The first special offer</h4>
+                    <button class="specials_btn" onclick="bookSpecial(event, 1)">Book this activity</a>
+                </div>
+
+                <div class="specials_div" id="specials_div_2">
+                    <img src="assets/img/tickets_2/specials2.jpg" alt="The second special offer" class="specials_img">
+                    <h4 class="specials_div_title" id="specials_div_title_2">The second special offer</h4>
+                    <button class="specials_btn" onclick="bookSpecial(event, 2)">Book this activity</a>
+                </div>
+
+                <div class="specials_div" id="specials_div_3">
+                    <img src="assets/img/tickets_2/specials3.jpg" alt="The third special offer" class="specials_img">
+                    <h4 class="specials_div_title" id="specials_div_title_3">The third special offer</h4>
+                    <button class="specials_btn" onclick="bookSpecial(event, 3)">Book this activity</a>
+                </div>
+
+                <div class="specials_div" id="specials_div_4">
+                    <img src="assets/img/tickets_2/specials4.jpg" alt="The fourth special offer" class="specials_img">
+                    <h4 class="specials_div_title" id="specials_div_title_4">The fourth special offer</h4>
+                    <button class="specials_btn" onclick="bookSpecial(event, 4)">Book this activity</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Modal window for sending request for some special offer's activity-->
+        <div id="specials_modal_window">
+
+            <!--Contains a set of input fields, close (JS) and 'contact me' (in fact - 'send') buttons-->
+            <div id="specials_modal_content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="specialsLine">
+                    <p class="specials_modal_window_label" id="specials_modal_window_label_1">NAME:</p>
+                    <input class="specials_modal_window_input" id="specials_modal_window_input_1" type="text">
+                </div>
+
+                <div class="specialsLine">
+                    <p class="specials_modal_window_label" id="specials_modal_window_label_2">E-MAIL:</p>
+                    <input class="specials_modal_window_input" id="specials_modal_window_input_2" type="text">
+                </div>
+
+                <div class="specialsLine">
+                    <p class="specials_modal_window_label" id="specials_modal_window_label_3">DESIRED DATE:</p>
+                    <input class="specials_modal_window_input" id="specials_modal_window_input_3" type="date">
+                </div>
+
+                <div class="specialsLine">
+                    <p class="specials_modal_window_label" id="specials_modal_window_label_4">SPECIAL OFFER:</p>
+                    <select name="activities" id="specials_modal_window_input_4">
+                        <option value=1>Special offer # 1</option>
+                        <option value=2>Special offer # 2</option>
+                        <option value=3>Special offer # 3</option>
+                        <option value=4>Special offer # 4</option>
+                    </select>
+                </div>
+                <div id="modal_btn_div"><button id="book_btn">CONTACT ME</a></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Opening of Footer Section -->
+        <footer class="footer-section">
+
+            <!-- Opening of Left Footer Section -->
+            <aside class="footer-left">
+                <h3>Exotic Space <span>Park</span></h3>
+
+                <!-- Opening of Left Footer Navigation -->
+                <nav class="footer-links">
+                    <p>
+                        <!-- class="link-first" is disabled at the moment in the CSS, in case "|" has to be 
+                    removed before the first link, enabled it in the CSS -->
+                        <a href="index.html" class="link-first">Main</a>
+                        <a href="tickets_2.html">Tickets</a>
+                        <a href="#" class="link-last">About</a>
+                    </p>
+                </nav>
+                <!-- Closing of / Left Footer Navigation -->
+
+            </aside>
+            <!-- Closing of / Left Footer Section -->
+
+            <!-- Opening of Center Footer Section, with address details -->
+            <summary class="footer-center">
+
+                <!-- Opening of footer address -->
+                <summary class="footer-icons">
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>In the Jungle</span>The mighty jungle</p>
+                </summary>
+                <!-- Closing of / footer address -->
+
+            </summary>
+            <!-- Closing of / Center Footer Section, with address details -->
+
+            <!-- Opening of Right Footer Section, with contacts details -->
+            <aside class="footer-right">
+
+                <!-- Opening of Right Footer Contact details -->
+                <summary class="footer-icons">
+                    <p>+3.1415926 <i class="fa fa-phone"></i>
+                        <a href="mailto:">space@exjpark.com </a> <i class="fa fa-envelope"></i>
+                    </p>
+                </summary>
+                <!-- Closing of / Right Footer Contact details -->
+
+            </aside>
+            <!-- Closing of / Right Footer Section, with contacts details -->
+
+        </footer>
+        <!-- Closing of / Footer Section-->
+
+        <!-- Opening of backtotop element -->
+        <div id="return__top">
+            <span class=""><a href="#"><i class="fa fa-fire"></a></i>
+                <a href="#"> Teleport to the top </a></span>
+        </div>
+        <!-- Closing of / backtotop -->
+    </div>
+</body>
+
+</html>

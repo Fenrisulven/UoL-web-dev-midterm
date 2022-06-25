@@ -1,0 +1,444 @@
+.main ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: white;
+}
+.main li{
+        display: inline-block;
+}
+.main a{
+    display: block;
+    text-decoration: none;
+    color: brown;
+    width: 450px;
+    padding: 5px 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.main a:hover{
+    background: lightgrey;
+}
+.main li.active{
+    background-color: whitesmoke;
+    color: black;
+}
+
+img.logo 
+{
+  padding: 5px;
+  display: block;
+  margin: auto;
+  border: transparent;
+}
+
+body {
+/*    background-image: url(media/bg4.jpg);*/
+    background-color: teal;
+    height: 100vh;
+    background-size: auto;
+    background-repeat: repeat-y;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    line-height: 2em;
+    font-weight: 300;
+    color: #000;
+    letter-spacing: .3px;
+}
+
+img.map{
+    display: block;
+    margin: auto;
+    border: transparent;
+}
+div.map{
+    text-decoration-line: underline;
+    text-align: center;
+    text-shadow: 
+    font-size: 20px;
+}
+.map{      
+border: 2px solid white;    
+padding: 10px;
+margin-top: 15px;
+margin-bottom: 5px;
+margin-left: 5px;
+margin-right: 5px;
+}
+
+ div.schedule{
+    padding-bottom: 20px;
+    border: 2px solid white;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    }
+.schedule h2{
+    text-decoration: underline;
+    text-align: center;
+    color: black;
+}
+.schedule p{
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+.schedule table{
+    margin: auto;
+    background: lightgrey;
+    width: 50%;
+    text-align: center;
+}
+.schedule table th{
+    text-decoration: underline;
+    font-size: 20px;
+    color: darkslateblue;
+}
+
+div.media{
+    text-align: center;
+    text-decoration: underline;
+    padding: 5px;
+    border: 2px solid white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+div.services{
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+    border: 2px solid white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+div.gallery {
+  border: 2px solid white;
+}
+div.gallery:hover {
+  border: 3px solid #777;
+}
+div.gallery img {
+  width: 100%;
+  height: 100%;
+}
+div.desc {
+padding: 10px;
+background-color: antiquewhite;    
+text-align: center;
+font-size: 14px;
+}
+* {
+  box-sizing: border-box;
+}
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 25%;
+}
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.Factsheet{
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.Factsheet ol{
+    font-size: 20px;
+    color: black;
+    list-style: circle;
+}
+.Factsheet h2{
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+div.safety{
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.safety h2{
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+img.loc{
+    display: block;
+    margin: auto;
+    border: transparent;
+}
+div.loc{
+    text-decoration-line: underline;
+    text-align: center;
+    text-shadow: 
+    font-size: 20px;
+}
+.loc{
+          
+border: 2px solid white;    
+padding: 10px;
+margin-top: 15px;
+margin-bottom: 5px;
+margin-left: 5px;
+margin-right: 5px;
+
+}
+
+.footer-section {
+    background-image: linear-gradient(180deg, rgba(17, 0, 255, 0.815), rgb(11, 89, 31));
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold;
+    padding: 2% 2%;
+}
+.footer-section .footer-left,
+.footer-section .footer-center,
+.footer-section .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-section .footer-left {
+    width: 40%;
+}
+
+/* Park name style control */
+
+.footer-section h3 {
+    color: #ffffff;
+    font: normal 40px 'Roboto', cursive;
+    margin: 0;
+}
+
+.footer-section h3 span {
+    color: #ffbb00;
+}
+
+/* Footer links control */
+
+.footer-section .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-section .footer-links a {
+    display: inline-block;
+    line-height: 2.0;
+    font-weight: 500;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Footer Center */
+
+.footer-section .footer-center {
+    width: 30%;
+
+}
+
+.footer-section .footer-center {
+    background-color: #ffbb00;
+    min-height: 20vh;
+    min-width: 40vh;
+}
+
+
+.footer-section .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-section .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-section .footer-center p a {
+    color: lightseagreen;
+    text-decoration: none;
+
+}
+
+.footer-section .footer-links a:before {
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+/* The following is to remove the '|' before the first link, uncomment the following line and comment the .link2:after in case we decide to remove the "|" before the first link and after the last link the footer-left-section links
+.footer-section .footer-links .link-first:before {
+    content: none;
+}
+*/
+
+/* The following is to add the '|' after the last link in the footer section */
+
+.footer-section .footer-links .link-last:after {
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-left: 5px;
+    ;
+}
+
+
+/* Footer Right */
+
+.footer-section .footer-right {
+    width: 25%;
+    padding-left: 3%;
+    text-align: right;
+}
+
+.footer-section .footer-icons {
+
+    margin-top: 25px;
+}
+
+.footer-section .footer-icons i {
+    background-color: #000;
+    color: #ffffff;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+
+}
+
+.footer-section .footer-icons p {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 40px;
+    color: #ffffff;
+
+
+}
+
+.footer-section .footer-icons a {
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 40px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+/* media responsiveness of footer section */
+
+@media (max-width: 880px) {
+
+    .footer-section .footer-left,
+    .footer-section .footer-center,
+    .footer-section .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+/** 
+Section below the Footer section with return to top of page option link ID:return__top 
+**/
+
+#return__top {
+    background-image: linear-gradient(180deg, rgb(11, 89, 31), rgb(14, 57, 9));
+    max-height: 10%;
+    height: 5%;
+    text-align: right;
+    color: #ffffff;
+    padding: 0% 0%;
+}
+
+/* moves the return__top link left */
+#return__top span {
+    margin-right: 5%;
+}
+
+/* removes the underline below the return__top link*/
+#return__top a {
+    color: #ffffff;
+    line-height: 2.0;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
